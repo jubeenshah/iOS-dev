@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1C4E15213DFFDA0069ED27 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1C4E14213DFFDA0069ED27 /* Media.xcassets */; };
 		8B3E398F213DF91D00DCE142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E398E213DF91D00DCE142 /* AppDelegate.swift */; };
 		8B3E3991213DF91D00DCE142 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E3990213DF91D00DCE142 /* ViewController.swift */; };
 		8B3E3994213DF91D00DCE142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E3992213DF91D00DCE142 /* Main.storyboard */; };
-		8B3E3996213DF91E00DCE142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E3995213DF91E00DCE142 /* Assets.xcassets */; };
 		8B3E3999213DF91E00DCE142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E3997213DF91E00DCE142 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B1C4E14213DFFDA0069ED27 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Assets.xcassets/Media.xcassets; sourceTree = "<group>"; };
 		8B3E398B213DF91D00DCE142 /* I am Rich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I am Rich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3E398E213DF91D00DCE142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B3E3990213DF91D00DCE142 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B3E3993213DF91D00DCE142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B3E3995213DF91E00DCE142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3E3998213DF91E00DCE142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B3E399A213DF91E00DCE142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +57,7 @@
 				8B3E398E213DF91D00DCE142 /* AppDelegate.swift */,
 				8B3E3990213DF91D00DCE142 /* ViewController.swift */,
 				8B3E3992213DF91D00DCE142 /* Main.storyboard */,
-				8B3E3995213DF91E00DCE142 /* Assets.xcassets */,
+				8B1C4E14213DFFDA0069ED27 /* Media.xcassets */,
 				8B3E3997213DF91E00DCE142 /* LaunchScreen.storyboard */,
 				8B3E399A213DF91E00DCE142 /* Info.plist */,
 			);
@@ -123,7 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3E3999213DF91E00DCE142 /* LaunchScreen.storyboard in Resources */,
-				8B3E3996213DF91E00DCE142 /* Assets.xcassets in Resources */,
+				8B1C4E15213DFFDA0069ED27 /* Media.xcassets in Resources */,
 				8B3E3994213DF91D00DCE142 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +282,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "I am Rich/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,7 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jubeenshah.I-am-Rich";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "I am Rich/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jubeenshah.I-am-Rich";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
