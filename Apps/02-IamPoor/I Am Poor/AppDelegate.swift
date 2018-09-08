@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  I am Rich
+//  I Am Poor
 //
-//  Created by Jubeen shah on 9/3/18.
-//  Copyright © 2018 Jubeen shah. All rights reserved.
+//  Created by Angela Yu on 24/08/2016.
+//
 //
 
 import UIKit
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
         return true
     }
 
