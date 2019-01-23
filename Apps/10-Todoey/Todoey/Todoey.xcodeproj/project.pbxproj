@@ -12,6 +12,7 @@
 		8B35986621F7A19E009424CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B35986421F7A19E009424CA /* Main.storyboard */; };
 		8B35986821F7A19F009424CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B35986721F7A19F009424CA /* Assets.xcassets */; };
 		8B35986B21F7A19F009424CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B35986921F7A19F009424CA /* LaunchScreen.storyboard */; };
+		8B35987B21F8B079009424CA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35987A21F8B079009424CA /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8B35986721F7A19F009424CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B35986A21F7A19F009424CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B35986C21F7A19F009424CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B35987A21F8B079009424CA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8B35986021F7A19E009424CA /* AppDelegate.swift */,
 				8B35986221F7A19E009424CA /* TodoListViewController.swift */,
+				8B35987A21F8B079009424CA /* Item.swift */,
 				8B35986421F7A19E009424CA /* Main.storyboard */,
 				8B35986721F7A19F009424CA /* Assets.xcassets */,
 				8B35986921F7A19F009424CA /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B35986321F7A19E009424CA /* TodoListViewController.swift in Sources */,
+				8B35987B21F8B079009424CA /* Item.swift in Sources */,
 				8B35986121F7A19E009424CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
