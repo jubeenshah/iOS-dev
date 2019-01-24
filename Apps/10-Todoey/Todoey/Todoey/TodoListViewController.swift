@@ -30,9 +30,9 @@ class TodoListViewController: UITableViewController {
        
         
 
-//        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
-//            itemArray = items
-//        }
+        if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
+            itemArray = items
+        }
         
     }
 
@@ -45,13 +45,10 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDOItemCell", for: indexPath)
+        let item = itemArray[indexPath.row]
         cell.textLabel?.text = itemArray[indexPath.row].title
+        cell.accessoryType = item.done ? .checkmark : .none
         
-        if itemArray[indexPath.row].done == true {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
         return cell
     }
     
@@ -70,7 +67,7 @@ class TodoListViewController: UITableViewController {
         
         var textField = UITextField()
         let alert = UIAlertController(title: "Something todoey?", message: "", preferredStyle: .alert)
-        let enterTextAlert = UIAlertController(title: "Todoey Text please", message: "", preferredStyle: .alert)
+        let enterTextAlert = UIAlertController(title: "Please enter Todoey Text please", message: "", preferredStyle: .alert)
         let dismissEnterTextAlert = UIAlertAction(title: "OK", style: .default) { (dismissEnterTextAlert) in
             self.present(alert, animated: true, completion: nil)
         }
