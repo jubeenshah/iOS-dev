@@ -11,7 +11,7 @@ import CoreData
 
 class CategoryTableViewController: UITableViewController {
 
-      var categoryArray: Array = [Category]()
+      var categoryArray = [Category]()
       let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
@@ -30,14 +30,10 @@ class CategoryTableViewController: UITableViewController {
         return categoryCell
     }
     
-   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.reloadData()
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
+
 
     func loadCategory(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
         do {
-            print("trying")
             categoryArray = try context.fetch(request)
         } catch {
             print("Error Fetching Data \(error)")
@@ -90,5 +86,16 @@ class CategoryTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToItems", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! TodoListViewController
+        
+        if let indexPathTest = tableView.indexPathForSelectedRow {
+            destinationVC.selectedCategory = categoryArray[indexPathTest.row]
+        }
+    }
     
 }
