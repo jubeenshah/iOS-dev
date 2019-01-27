@@ -12,6 +12,7 @@
 		8B35986621F7A19E009424CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B35986421F7A19E009424CA /* Main.storyboard */; };
 		8B35986821F7A19F009424CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B35986721F7A19F009424CA /* Assets.xcassets */; };
 		8B35986B21F7A19F009424CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B35986921F7A19F009424CA /* LaunchScreen.storyboard */; };
+		8B47AA8321FD63D700DFE44B /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47AA8221FD63D700DFE44B /* CategoryTableViewController.swift */; };
 		8B8ABB6921FC9F0B0031DD30 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B8ABB6721FC9F0B0031DD30 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		8B35986721F7A19F009424CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B35986A21F7A19F009424CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B35986C21F7A19F009424CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B47AA8221FD63D700DFE44B /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		8B8ABB6821FC9F0B0031DD30 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 				8B35986021F7A19E009424CA /* AppDelegate.swift */,
 				8B35986221F7A19E009424CA /* TodoListViewController.swift */,
 				8B35986421F7A19E009424CA /* Main.storyboard */,
+				8B47AA8221FD63D700DFE44B /* CategoryTableViewController.swift */,
 				8B35986721F7A19F009424CA /* Assets.xcassets */,
 				8B35986921F7A19F009424CA /* LaunchScreen.storyboard */,
 				8B35986C21F7A19F009424CA /* Info.plist */,
@@ -141,6 +144,7 @@
 				8B35986321F7A19E009424CA /* TodoListViewController.swift in Sources */,
 				8B8ABB6921FC9F0B0031DD30 /* DataModel.xcdatamodeld in Sources */,
 				8B35986121F7A19E009424CA /* AppDelegate.swift in Sources */,
+				8B47AA8321FD63D700DFE44B /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

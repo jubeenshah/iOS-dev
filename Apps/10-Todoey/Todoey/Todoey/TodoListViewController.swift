@@ -68,10 +68,6 @@ class TodoListViewController: UITableViewController {
         
         enterTextAlert.addAction(dismissEnterTextAlert)
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
-            //What will happen once the user clicks the "Add item" button
-            //print(textField.text!)
-            
-
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
             newItem.done = false
@@ -89,7 +85,6 @@ class TodoListViewController: UITableViewController {
             alertTextField.placeholder = "Create New Item"
             textField = alertTextField
         }
-        
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
